@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokemon API | Assignment 3</title>
+  <link rel="stylesheet" href="./css/dex.css">
+</head>
+<body>
+  <header class="header">
+    <h1>PokeDex</h1>
+  </header>
+
+  <main>
+    <div class="dex-shell left">
+      <section class="aux-data">
+        <a id="previous" href="#">
+          Back
+        </a>
+        <a id="next" href="#">
+          Next
+        </a>
+        
+      </section>
+    </div>
+
+    <div class="dex-shell right">
+    <section class="poke-panel">
+      <div class="sprite">
+        <img id ="pokeSprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="SQUIRBY">
+      </div>
+      <ul class="data-strip id-name">
+        <li id="idNo">No.7</li>
+        <li id="pokeName">Squirtle</li>
+      </ul>
+      <ul class="data-strip types">
+        <li>Type:</li>
+        <li id="type1">Water</li>
+        <li id="type2">N/A</li>
+      </ul>
+      <div class="desc-wrapper">
+        <p id="description">
+         
+        </p>
+      </div>
+    </section>
+  </div>
+  </main>
+  
+  <script src="./js/dex.js"></script>
+</body>
+</html>

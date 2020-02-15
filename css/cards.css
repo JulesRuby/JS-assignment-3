@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Iceland|Press+Start+2P|Turret+Road&display=swap');
+
+*{ 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Press Start 2P", "Turret Road", "Iceland", monospace;
+  color: rgb(24, 44, 24);
+  background-color:rgb(120, 164, 120);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5vh;
+  height: 15vh;
+  background-color: blue;
+}
+.header h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: yellow;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(75px, 1fr) repeat(4,minmax(150px, 2fr)) minmax(75px, 1fr);
+  grid-gap: 10px;
+}
+
+.poke-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: 2/6;
+  grid-gap: 10px;
+}
+
+.sprite {
+  margin:0;
+  border-bottom: 20px solid rgb(85, 204, 131);
+}
+
+img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+
+.poke-wrap > .card {
+  background-color: rgb(111, 144, 123);
+  border-radius: 10px;
+  min-width: 150px;
+  min-height: 150px; 
+  cursor: pointer;
+}
+
+.card > .index-no,
+.card > .poke-name {
+  text-align: center;;
+}
+
+.card{
+  transition: all .15s; 
+}
+
+.card:hover {
+  transform: translate(5px, -5px);
+  box-shadow: 2px 2px 10px 1px rgb(36, 57, 44);
+}

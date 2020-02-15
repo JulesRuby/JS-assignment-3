@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Iceland|Press+Start+2P|Turret+Road&display=swap');
+
+*{ 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Press Start 2P", "Turret Road", "Iceland", monospace;
+  color: rgb(72, 145, 72);
+}
+
+header {
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+  width: 100vw;
+  background-color: blue;
+  height:15vh;
+  margin-bottom: 5vh;
+}
+
+header h1{ 
+  margin: 0;
+  text-align: center;
+  color: yellow;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+#previous,
+#next {
+
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color:  rgb(72, 145, 72);
+  transition: .1s all;
+  width: 150px;
+  text-align: center;
+  margin: 0 .5rem;;
+
+}
+
+
+#previous:hover,
+#next:hover {
+  background-color: rgb(72, 145, 72);
+  color: rgb(204, 248, 195);
+}
+
+main {
+  display: grid;
+  /* grid-template-columns: minmax(75px, 1fr) repeat(4,minmax(150px, 2fr)) minmax(75px, 1fr); */
+  grid-template-columns: 75px 1fr minmax(150px, 450px) repeat(2, minmax(75px, 150px)) minmax(150px, 450px) 1fr 75px;
+  height: 80vh;
+  min-height: 650px;
+}
+
+.dex-shell {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: red;
+}
+
+.left {
+  grid-column: 3/5;
+  border-radius: 30px 0 0 20px;
+  border-right: 5px inset rgb(32, 32, 32);
+}
+
+.aux-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(204, 248, 195);
+  justify-self: center;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  align-self: center;
+}
+
+ .right { 
+  grid-column: 5/7;
+  border-radius: 0 30px 20px 0;
+  border-left: 5px outset rgb(68, 68, 68);
+}
+
+ .poke-panel {
+  background-color: rgb(204, 248, 195);;
+  justify-self: center;
+  height:80%;
+  width:80%;
+  align-self: center;
+}
+
+
+.sprite {
+  margin:0;
+  border-bottom: 20px solid rgb(85, 204, 131);
+}
+
+img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.data-strip {
+  display: flex;
+  padding: 0 .75rem;
+  justify-content: space-between;
+
+}
+
+#idNo,
+#pokeName,
+#type1,
+#type2 {
+  text-transform: capitalize;
+}
+
+.types {
+  flex-wrap: wrap;
+}
+
+.types li:first-child {
+  width:100%;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.desc-wrapper {
+  padding: .5rem .75rem;
+}
+
