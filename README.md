@@ -1,1 +1,1 @@
-# JS-assignment-3
+# Pokedex - PokeAPI
